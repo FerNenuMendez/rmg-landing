@@ -1,0 +1,123 @@
+---
+import Image from "astro/components/Image.astro";
+import Mail from "./Mail.astro";
+import Tel from "./Tel.astro";
+import contact from "../../public/contact.webp";
+---
+
+<section id="contacto" class="bg-background">
+  <div class="py-16 lg:pb-10 text-center">
+    <p class="font-bold text-primary text-sm md:text-lg">¿Necesitas ayuda?</p>
+    <h2 class="font-roboto font-bold text-3xl px-3 text-black md:text-4xl">
+      Medios de contacto
+    </h2>
+  </div>
+  <div
+    class="text-center lg:text-white text-black/90 lg:flex max-w-[1280px] m-auto lg:bg-darkbg mb-12"
+  >
+    <div class="lg:flex">
+      <div class="lg:flex-col-reverse lg:max-w-[978px] m-auto">
+        <div
+          class="border-2 border-solid border-gold m-auto max-w-[400px] p-6 bg-gold/20"
+        >
+          <div
+            class="flex gap-4 justify-left items-center text-left m-auto w-[300px]"
+          >
+            <Tel /><div>
+              <p class="font-semibold">Teléfono</p>
+              <a href="tel: 1150271994" class="font-semibold"
+                >+54 (11) 5027 - 1994</a
+              >
+            </div>
+          </div>
+          <div
+            class="flex gap-4 justify-left items-center text-left m-auto w-[300px]"
+          >
+            <Mail /><div>
+              <p class="font-semibold">Correo electrónico</p>
+              <a href="mailto:rmgciudadanias@gmail.com" class="font-semibold"
+                >rmgciudadanias@gmail.com</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="px-8 py-12 lg:py-12 max-w-[640px] lg:m-auto">
+          <p
+            class="font-roboto px-8 py-2 font-bold text-xl text-primary lg:text-2xl"
+          >
+            Ofrecemos entrevistas de consulta sin costo
+          </p>
+          <div class="max-w-[480px] m-auto">
+            <p class="font-slab text-sm lg:text-base">
+              En RMG Ciudadanías, queremos hacer de tu experiencia algo simple y
+              cercano. Si tienes dudas, necesitas orientación o quieres empezar
+              con tu trámite, estamos aquí para ayudarte.
+            </p>
+            <br />
+            <p class="font-slab text-sm lg:text-base">
+              Podrás despejar todas tus inquietudes y conocer más sobre cómo
+              trabajamos. Creemos que cada caso es único, y estamos
+              comprometidos a brindarte la atención personalizada que mereces.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <form
+      id="contactForm"
+      class="flex flex-col text-start bg-darkbg px-6 lg:px-2 py-12 font-roboto text-white m-auto"
+    >
+      <h3 class="font-bold text-center text-2xl mb-2">
+        Dejanos tu consulta y nosotros te contactamos
+      </h3>
+      <label for="name" class="text-sm text-gold mt-4">Nombre</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        required
+        placeholder="Ingresa tu nombre"
+        class="py-2 border-solid border-b-2 px-1 border-white/70 mb-4 text-white bg-transparent"
+      />
+
+      <label for="email" class="text-sm text-gold mt-4">Email</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        required
+        placeholder="Ingresa tu email"
+        class="py-2 border-solid border-b-2 px-1 border-white/70 mb-4 text-white bg-transparent"
+      />
+
+      <label for="phone" class="text-sm text-gold mt-4"
+        >Teléfono de Contacto</label
+      >
+      <input
+        type="tel"
+        id="phone"
+        name="phone"
+        required
+        placeholder="Ingresa tu número de teléfono"
+        class="py-2 border-solid border-b-2 px-1 border-white/70 mb-4 text-white bg-transparent"
+      />
+
+      <label for="comment" class="text-sm text-gold mt-4">Comentario</label>
+      <textarea
+        id="comment"
+        name="comment"
+        rows="4"
+        placeholder="Escribe tu mensaje aquí"
+        class="py-2 border-solid border-b-2 px-1 border-white/70 mb-4 text-white bg-transparent resize-none"
+      ></textarea>
+
+      <button
+        type="submit"
+        class="border-2 border-primary text-white text-lg m-auto px-12 py-2 mt-2 cursor-pointer hover:bg-primary duration-300"
+        >Enviar</button
+      >
+    </form>
+  </div>
+</section>
+
+<script src="../scripts/formHandler.js"></script>

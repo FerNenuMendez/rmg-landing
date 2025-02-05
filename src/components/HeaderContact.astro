@@ -1,0 +1,33 @@
+---
+import Insta from "./InstagramIcon.astro";
+import Mail from "./MailIcon.astro";
+import Whatsapp from "./Whatsapp.astro";
+---
+
+<section
+  class="bg-secondary h-8 border-solid border-black drop-shadow-lg shadow-lg"
+>
+  <div class="container-central">
+    <div class="flex items-center justify-end">
+      <div class="flex items-center justify-around">
+        <a
+          href="https://instagram.com/rmg_ciudadanias"
+          target="_blank"
+          id="insta"
+        >
+          <Insta />
+        </a>
+        <a href="">
+          <Mail />
+        </a>
+        <a
+          href="https://wa.me/+5491140846132?text=Hola%2C%20quiero%20saber%20m%C3%A1s%20sobre%20tu%20servicio!"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Whatsapp />
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,19 @@
+---
+import Hero from "../components/Hero.astro";
+import Review2 from "../components/Review2.astro";
+import Us from "../components/InfoNosotros.astro";
+import Servicios from "../components/Servicios.astro";
+import Contacto from "../components/Contacto.astro";
+import WhatsappButtom from "../components/WhatsappButtom.astro";
+import { serverHelpers } from "astro/runtime/client/dev-toolbar/helpers.js";
+---
+
+<section id="main" class="flex flex-col">
+  <Hero />  
+  <Servicios />
+  <Us />
+  <Review2 />
+  <Contacto />
+</section>
+<WhatsappButtom />
+

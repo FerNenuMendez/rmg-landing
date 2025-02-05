@@ -1,0 +1,21 @@
+{
+  "name": "rmg",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@fontsource-variable/roboto-slab": "^5.1.1",
+    "@fontsource/roboto": "^5.1.1",
+    "@preline/collapse": "^2.5.2",
+    "@preline/overlay": "^2.5.2",
+    "astro": "^5.2.5",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17"
+  }
+}

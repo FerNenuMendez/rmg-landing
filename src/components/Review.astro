@@ -1,0 +1,310 @@
+---
+
+---
+
+<section class="h-[150px]">
+  <div class="container-central">
+    <div class="w-full flex">
+      <div class="content-slider">
+        <div class="slider">
+          <div class="mask">
+            <ul>
+              <li class="anim1">
+                <div class="quote">
+                  "Gracias por todo, no lo hubiese hecho sin ustedes, son los
+                  mejores chicos!"
+                </div>
+                <div class="source">- Micaela</div>
+              </li>
+              <li class="anim2">
+                <div class="quote">
+                  "Me acompañaron en todo el proceso y lo volvieron algo muy
+                  simple."
+                </div>
+                <div class="source">- Martina</div>
+              </li>
+              <li class="anim3">
+                <div class="quote">
+                  "Gracias a ustedes pude obtener mi pasaporte Italiano, y
+                  acercarme a la tierra de mi abuelo. Gracias Chicos!"
+                </div>
+                <div class="source">- Fernando</div>
+              </li>
+              <li class="anim4">
+                <div class="quote">
+                  "Super recomendables y de confianza, gracias!"
+                </div>
+                <div class="source">- Luciana</div>
+              </li>
+              <li class="anim5">
+                <div class="quote">
+                  "Gracias por la paciencia, por aclarar todas mis dudas
+                  siempre. Hoy soy Español como mi papa."
+                </div>
+                <div class="source">- Diego</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .content-slider {
+    width: 100%;
+    height: 180px;
+  }
+
+  .slider {
+    height: 160px;
+    width: auto;
+    margin: 25px 0 0;
+    padding: 15px;
+    overflow: visible;
+    position: relative;
+  }
+
+  .mask {
+    overflow: hidden;
+    height: 140px;
+  }
+
+  .slider ul {
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+
+  .slider li {
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: -325px;
+    list-style: none;
+  }
+
+  .slider .quote {
+    text-align: center;
+    font-size: 16px;
+    font-style: italic;
+  }
+
+  .slider .source {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .slider li.anim1 {
+    animation: cycle 20s linear infinite;
+  }
+
+  .slider li.anim2 {
+    animation: cycle2 20s linear infinite;
+  }
+
+  .slider li.anim3 {
+    animation: cycle3 20s linear infinite;
+  }
+
+  .slider li.anim4 {
+    animation: cycle4 20s linear infinite;
+  }
+
+  .slider li.anim5 {
+    animation: cycle5 20s linear infinite;
+  }
+
+  .slider:hover li {
+    animation-play-state: paused;
+  }
+
+  @keyframes cycle {
+    0% {
+      top: 0px;
+    }
+    4% {
+      top: 0px;
+    }
+    16% {
+      top: 0px;
+      opacity: 1;
+      z-index: 0;
+    }
+    20% {
+      top: 325px;
+      opacity: 0;
+      z-index: 0;
+    }
+    21% {
+      top: -325px;
+      opacity: 0;
+      z-index: -1;
+    }
+    50% {
+      top: -325px;
+      opacity: 0;
+      z-index: -1;
+    }
+    92% {
+      top: -325px;
+      opacity: 0;
+      z-index: 0;
+    }
+    96% {
+      top: -325px;
+      opacity: 0;
+    }
+    100% {
+      top: 0px;
+      opacity: 1;
+    }
+  }
+
+  @keyframes cycle2 {
+    0% {
+      top: -325px;
+      opacity: 0;
+    }
+    16% {
+      top: -325px;
+      opacity: 0;
+    }
+    20% {
+      top: 0px;
+      opacity: 1;
+    }
+    24% {
+      top: 0px;
+      opacity: 1;
+    }
+    36% {
+      top: 0px;
+      opacity: 1;
+      z-index: 0;
+    }
+    40% {
+      top: 325px;
+      opacity: 0;
+      z-index: 0;
+    }
+    41% {
+      top: -325px;
+      opacity: 0;
+      z-index: -1;
+    }
+    100% {
+      top: -325px;
+      opacity: 0;
+      z-index: -1;
+    }
+  }
+
+  @keyframes cycle3 {
+    0% {
+      top: -325px;
+      opacity: 0;
+    }
+    36% {
+      top: -325px;
+      opacity: 0;
+    }
+    40% {
+      top: 0px;
+      opacity: 1;
+    }
+    44% {
+      top: 0px;
+      opacity: 1;
+    }
+    56% {
+      top: 0px;
+      opacity: 1;
+      z-index: 0;
+    }
+    60% {
+      top: 325px;
+      opacity: 0;
+      z-index: 0;
+    }
+    61% {
+      top: -325px;
+      opacity: 0;
+      z-index: -1;
+    }
+    100% {
+      top: -325px;
+      opacity: 0;
+      z-index: -1;
+    }
+  }
+
+  @keyframes cycle4 {
+    0% {
+      top: -325px;
+      opacity: 0;
+    }
+    56% {
+      top: -325px;
+      opacity: 0;
+    }
+    60% {
+      top: 0px;
+      opacity: 1;
+    }
+    64% {
+      top: 0px;
+      opacity: 1;
+    }
+    76% {
+      top: 0px;
+      opacity: 1;
+      z-index: 0;
+    }
+    80% {
+      top: 325px;
+      opacity: 0;
+      z-index: 0;
+    }
+    81% {
+      top: -325px;
+      opacity: 0;
+      z-index: -1;
+    }
+    100% {
+      top: -325px;
+      opacity: 0;
+      z-index: -1;
+    }
+  }
+
+  @keyframes cycle5 {
+    0% {
+      top: -325px;
+      opacity: 0;
+    }
+    76% {
+      top: -325px;
+      opacity: 0;
+    }
+    80% {
+      top: 0px;
+      opacity: 1;
+    }
+    84% {
+      top: 0px;
+      opacity: 1;
+    }
+    96% {
+      top: 0px;
+      opacity: 1;
+      z-index: 0;
+    }
+    100% {
+      top: 325px;
+      opacity: 0;
+      z-index: 0;
+    }
+  }
+</style>

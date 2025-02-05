@@ -1,0 +1,20 @@
+---
+import Logo from "../../public/rmgSF-compact.png";
+import Image from "astro/components/Image.astro";
+import Hamburguer from "./Hamburguer.astro";
+---
+
+<section class="bg-primary relative">
+  <div class="container-central">
+    <nav class="flex items-center justify-center w-full">
+      <div>
+        <a class="" href="#">
+          <Image src={Logo} alt="Logo de RMG Ciudadanias" class="max-w-28 p-2" />
+        </a>
+      </div>      
+    </nav>
+  </div>
+  <div class="absolute top-[50%] -translate-y-[50%] end-4">
+    <Hamburguer/>
+  </div>  
+</section>

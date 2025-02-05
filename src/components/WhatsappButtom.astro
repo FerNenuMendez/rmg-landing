@@ -1,0 +1,28 @@
+---
+import Logo from "./WhatsappGrande.astro";
+import Logo2 from "./WPLogo.astro";
+---
+
+<div id="whatsapp" class="hidden fixed bottom-3 right-3">
+  <a
+    href="https://wa.me/1150271994"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="shadow-xl shadow-black"
+  >
+    <Logo2 />
+  </a>
+</div>
+<script src="../scripts/whatsappHandler.js"></script>
+<style>
+  #whatsapp {
+    z-index: 1000; /* Asegúrate de que esté sobre otros elementos */
+    display: none; /* Oculto por defecto */
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  #whatsapp.show {
+    display: block; /* Muestra el componente */
+    opacity: 1;
+  }
+</style>
