@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        'bg-hero': "url('/src/assets/bg-hero.svg')",
+        'bg-hero': "url('/src/assets/bg-hero.webp')",
       },
       colors: {
         text: '#140d0d',
